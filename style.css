@@ -10,10 +10,8 @@ html, body {
 }
 
 .wrapper {
-    width: 80%;
-    margin: 50px auto;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -28,8 +26,15 @@ h1 {
 }
 
 h2 {
-    font-weight: 100;
-    font-size: 10pt;
+    text-shadow: 1px 1px 1px black;
+}
+
+#h2_pattern {
+    color: #D50000;
+}
+
+#h2_reiss {
+    color: #ffffff;
 }
 
 header {
@@ -37,7 +42,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(hintergrund_header.png);
+    background-image: url(images/hintergrund_header.png);
 
 }
 
@@ -85,9 +90,14 @@ header {
 }
 
 #pattern{
-    width: 50%;
+    background-image: url(images/hintergrund_patterns.png);
 }
 
 #reiss {
-    width: 50%;
+    background-image: url(images/hintergrund_reiss.png);
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
