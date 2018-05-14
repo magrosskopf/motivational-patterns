@@ -45,3 +45,4 @@ openInformationPatterns = function () {
 	jQuery('#interface_link').css('color', '#000000');
 	jQuery('#information_link').css('color', '#D50000');
 };
+
