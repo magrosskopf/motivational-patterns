@@ -2,31 +2,36 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
+
 }
 html, body {
     height: 100%;
     width: 100%;
-    font-family: 'Roboto Cn', Arial, sans-serif;
 }
 
 .wrapper {
     width: 100%;
     text-align: center;
+    background-image: url(images/hintergrund_patterns.png);
 }
 
 
 h1 {
-    font-weight: 100;
-    font-size: 30pt;
+    font-size: 40pt;
     color: #FFFFFF;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 2px 2px 15px black;
+    font-weight: Bold;
+    margin-bottom: 25px;
 }
 
 h2 {
-    text-shadow: 1px 1px 1px black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 30pt;
 }
 
 #h2_pattern {
@@ -38,7 +43,7 @@ h2 {
 }
 
 header {
-    height: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,29 +61,41 @@ header {
 
 #button_pattern {
     border-radius: 20px;
-    background-color: #D50000;
-    padding: 10px 24px;
-    color: white;
+    background-color: #ffffff;
+    padding: 15px 24px;
     cursor: pointer;
     border: none;
     margin-top: 20px;
     margin-right: 20px;
     width: 200px;
+    font-size: 15px;
 }
 
 #button_pattern:hover {
-    background-color: #4D4B4B;
+    background-color: #D50000;
+}
+
+#button_pattern:hover a {
+    color: white;
 }
 
 #button_reiss {
     border-radius: 20px;
     background-color: #4D4B4B;
-    padding: 10px 24px;
-    color: white;
+    padding: 15px 24px;
     cursor: pointer;
     border: none;
     margin-top: 20px;
     width: 200px;
+    font-size: 15px;
+}
+
+#button_reiss a{
+    color: white;
+}
+
+#button_pattern a{
+    color: #4D4B4B;
 }
 
 #button_reiss:hover {
@@ -86,11 +103,11 @@ header {
 }
 
 #button_box {
-    margin-top: 20px;
+    padding-top: 80px;
 }
 
 #pattern{
-    background-image: url(images/hintergrund_patterns.png);
+    /*background-image: url(images/hintergrund_patterns.png);*/
 }
 
 #reiss {
@@ -98,6 +115,73 @@ header {
 }
 
 a {
-    color: white;
     text-decoration: none;
+    color: black;
+}
+
+#pattern_info_box {
+    background-color: #ffffff;
+    width: 50%;
+    height: auto;
+    border: solid 0.2px #707070;
+    margin: auto auto 80px auto;
+    padding-bottom: 20px;
+
+}
+
+#nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    border-bottom: solid 1px #D50000;
+}
+
+li {
+    float: left;
+    list-style: none;
+    padding: 10px 17px;
+}
+
+.link:hover {
+    color: #D50000;
+    cursor: pointer;
+}
+
+.accordion {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    padding: 15px;
+    width: 95%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    color: #D50000;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.patterntext {
+    text-align: left;
+    padding: 0 32px;
+    padding-top: 20px;
+}
+
+.panel_items {
+    font-size: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
 }
