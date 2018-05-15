@@ -8,12 +8,14 @@
 html, body {
     height: 100%;
     width: 100%;
+    background-image: url(images/hintergrund_patterns.png);
 }
 
 .wrapper {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-    background-image: url(images/hintergrund_patterns.png);
+    
 }
 
 
