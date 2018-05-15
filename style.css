@@ -119,9 +119,9 @@ a {
     color: black;
 }
 
-#pattern_info_box {
+.pattern_info_box {
     background-color: #ffffff;
-    width: 50%;
+    width: 70%;
     height: auto;
     border: solid 0.2px #707070;
     margin: auto auto 80px auto;
@@ -129,7 +129,19 @@ a {
 
 }
 
-#nav {
+.darkpattern_info_box {
+    background-color: #222222 !important;
+    color: white; 
+}
+
+
+
+.darkpattern_info_box .accordion {
+    background-color: #222222;
+    color: white;
+}
+
+.nav {
     width: 100%;
     display: flex;
     align-items: center;
