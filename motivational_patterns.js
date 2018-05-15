@@ -65,7 +65,7 @@ openMonetarypattern = function () {
 	jQuery('#monetarypatterns_link').css('color', '#D50000');
 	jQuery('#socialcapital_link').css('color', '#ffffff');
 };
-openSocialcapital = function () {
+openTemporalpattern = function () {
 	jQuery('#temporalpatterns').show();
 	jQuery('#monetarypattern').hide();
 	jQuery('#socialcapital').hide();

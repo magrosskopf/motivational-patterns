@@ -114,6 +114,8 @@ header {
 
 #reiss {
     background-image: url(images/hintergrund_reiss.png);
+    width: 100%;
+    color: white;
 }
 
 a {
