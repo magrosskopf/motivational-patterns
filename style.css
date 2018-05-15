@@ -116,6 +116,7 @@ header {
     height: auto;
     color: white;
     text-align: center;
+    padding: 40px;
 }
 
 a {
@@ -214,6 +215,7 @@ a {
     background-color: #ffffff;
     width: 70%;
     height: auto;
+   
 
 }
 
