@@ -116,7 +116,7 @@ header {
     height: auto;
     color: white;
     text-align: center;
-    padding: 40px;
+    padding-bottom: 50px;
 }
 
 a {
@@ -202,18 +202,19 @@ a {
     text-align: left;
 }
 
-.motivations li {
-    list-style: decimal;
+
+
+.motivations ul {
+    float: left;
 }
 
-
-.motivations ol {
-
+.motivations li {
+    list-style-type: square;
 }
 
 .reiss_info_box {
     background-color: #ffffff;
-    width: 70%;
+    width: 65%;
     height: auto;
    
 
@@ -221,4 +222,6 @@ a {
 
 .reiss_info_box .reisstext {
     color: #000000;
+    padding: 20px;
+    text-align: left;
 }
