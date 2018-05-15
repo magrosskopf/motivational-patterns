@@ -46,3 +46,32 @@ openInformationPatterns = function () {
 	jQuery('#information_link').css('color', '#D50000');
 };
 
+
+openSocialcapital = function () {
+	jQuery('#temporalpatterns').hide();
+	jQuery('#monetarypattern').hide();
+	jQuery('#socialcapital').show();
+
+	jQuery('#temporalpatterns_link').css('color', '#ffffff');
+	jQuery('#monetarypatterns_link').css('color', '#ffffff');
+	jQuery('#socialcapital_link').css('color', '#D50000');
+};
+openMonetarypattern = function () {
+	jQuery('#temporalpatterns').hide();
+	jQuery('#monetarypattern').show();
+	jQuery('#socialcapital').hide();
+
+	jQuery('#temporalpatterns_link').css('color', '#ffffff');
+	jQuery('#monetarypatterns_link').css('color', '#D50000');
+	jQuery('#socialcapital_link').css('color', '#ffffff');
+};
+openSocialcapital = function () {
+	jQuery('#temporalpatterns').show();
+	jQuery('#monetarypattern').hide();
+	jQuery('#socialcapital').hide();
+
+	jQuery('#temporalpatterns_link').css('color', '#D50000');
+	jQuery('#monetarypatterns_link').css('color', '#ffffff');
+	jQuery('#socialcapital_link').css('color', '#ffffff');
+};
+
