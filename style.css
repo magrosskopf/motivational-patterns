@@ -1,6 +1,5 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: auto;
     list-style: none;
     font-family: 'Roboto', sans-serif;
 
@@ -22,7 +21,6 @@ html, body {
 h1 {
     font-size: 40pt;
     color: #FFFFFF;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     text-shadow: 2px 2px 15px black;
@@ -113,9 +111,11 @@ header {
 }
 
 #reiss {
-    background-image: url(images/hintergrund_reiss.png);
-    width: 100%;
+    background-image: url(images/hintergrund_header.png);
+    width: auto;
+    height: auto;
     color: white;
+    text-align: center;
 }
 
 a {
@@ -154,7 +154,7 @@ a {
     border-bottom: solid 1px #D50000;
 }
 
-li {
+.nav li {
     float: left;
     list-style: none;
     padding: 10px 17px;
@@ -191,8 +191,7 @@ li {
 
 .patterntext {
     text-align: left;
-    padding: 0 32px;
-    padding-top: 20px;
+    padding: 20px 32px 20px;
 }
 
 .panel_items {
@@ -200,4 +199,24 @@ li {
     padding-left: 16px;
     padding-right: 16px;
     text-align: left;
+}
+
+.motivations li {
+    list-style: decimal;
+}
+
+
+.motivations ol {
+
+}
+
+.reiss_info_box {
+    background-color: #ffffff;
+    width: 70%;
+    height: auto;
+
+}
+
+.reiss_info_box .reisstext {
+    color: #000000;
 }
