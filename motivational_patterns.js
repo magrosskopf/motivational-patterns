@@ -1,77 +1,25 @@
-openGamefulPatterns = function () {
-	jQuery('#gamefulpatterns').show();
-	jQuery('#socialpatterns').hide();
-	jQuery('#interfacepatterns').hide();
-	jQuery('#informationpatterns').hide();
+openPattern = function ( uiElement ) {
 
-	jQuery('#gamfulpatterns_link').css('color', '#D50000');
-	jQuery('#socialpatterns_link').css('color', '#000000');
-	jQuery('#interface_link').css('color', '#000000');
-	jQuery('#information_link').css('color', '#000000');
+	var divId = uiElement.id.substring( 0,uiElement.id.length-5);
+
+	if(jQuery('#' + divId).css("display") != "none") {
+		jQuery('#' + divId).slideUp(1000);
+		jQuery(  '#' + uiElement.id ).css('color', '');
+		jQuery("." + divId + "_pfeil").attr("src", "images/pfeil_nach_unten.svg");
+	}
+	else {
+		jQuery('#' + divId).slideDown(1000);
+		jQuery( '#' + uiElement.id ).css('color', '#D50000');
+		jQuery("." + divId + "_pfeil").attr("src", "images/pfeil_nach_oben.svg");
+	}
 };
 
-openSocialPatterns = function () {
-	jQuery('#gamefulpatterns').hide();
-	jQuery('#socialpatterns').show();
-	jQuery('#interfacepatterns').hide();
-	jQuery('#informationpatterns').hide();
-
-	jQuery('#gamfulpatterns_link').css('color', '#000000');
-	jQuery('#socialpatterns_link').css('color', '#D50000');
-	jQuery('#interface_link').css('color', '#000000');
-	jQuery('#information_link').css('color', '#000000');
-};
-
-openInterfacePatterns = function () {
-	jQuery('#gamefulpatterns').hide();
-	jQuery('#socialpatterns').hide();
-	jQuery('#interfacepatterns').show();
-	jQuery('#informationpatterns').hide();
-
-	jQuery('#gamfulpatterns_link').css('color', '#000000');
-	jQuery('#socialpatterns_link').css('color', '#000000');
-	jQuery('#interface_link').css('color', '#D50000');
-	jQuery('#information_link').css('color', '#000000');
-};
-
-openInformationPatterns = function () {
+hidePatterns = function () {
 	jQuery('#gamefulpatterns').hide();
 	jQuery('#socialpatterns').hide();
 	jQuery('#interfacepatterns').hide();
-	jQuery('#informationpatterns').show();
-
-	jQuery('#gamfulpatterns_link').css('color', '#000000');
-	jQuery('#socialpatterns_link').css('color', '#000000');
-	jQuery('#interface_link').css('color', '#000000');
-	jQuery('#information_link').css('color', '#D50000');
-};
-
-
-openSocialcapital = function () {
-	jQuery('#temporalpatterns').hide();
-	jQuery('#monetarypattern').hide();
-	jQuery('#socialcapital').show();
-
-	jQuery('#temporalpatterns_link').css('color', '#ffffff');
-	jQuery('#monetarypatterns_link').css('color', '#ffffff');
-	jQuery('#socialcapital_link').css('color', '#D50000');
-};
-openMonetarypattern = function () {
-	jQuery('#temporalpatterns').hide();
-	jQuery('#monetarypattern').show();
+	jQuery('#informationpatterns').hide();
+	jQuery('#monetarypatterns').hide();
 	jQuery('#socialcapital').hide();
-
-	jQuery('#temporalpatterns_link').css('color', '#ffffff');
-	jQuery('#monetarypatterns_link').css('color', '#D50000');
-	jQuery('#socialcapital_link').css('color', '#ffffff');
+	jQuery('#temporalpatterns').hide();
 };
-openTemporalpattern = function () {
-	jQuery('#temporalpatterns').show();
-	jQuery('#monetarypattern').hide();
-	jQuery('#socialcapital').hide();
-
-	jQuery('#temporalpatterns_link').css('color', '#D50000');
-	jQuery('#monetarypatterns_link').css('color', '#ffffff');
-	jQuery('#socialcapital_link').css('color', '#ffffff');
-};
-

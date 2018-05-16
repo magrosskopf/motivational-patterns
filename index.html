@@ -24,17 +24,12 @@
             <div id="pattern">
                 <h2 id="h2_pattern">PATTERNS</h2>
                 <div class="pattern_info_box">
-                    <div class="nav">
-                        <ul>
-                            <li id="gamfulpatterns_link" class="link" onclick="openGamefulPatterns();">Gameful Patterns</li>
-                            <li id="socialpatterns_link" class="link" onclick="openSocialPatterns();">Social Patterns</li>
-                            <li id="interface_link" class="link" onclick="openInterfacePatterns();">Interface Patterns</li>
-                            <li id="information_link" class="link" onclick="openInformationPatterns();">Information Patterns</li>
-                        </ul>
+                    <div class="h3_box" id="gamefulpatterns_link" onclick="openPattern( this );">
+                        <h3>Gameful Patterns</h3>
+                        <img class="pfeil gamefulpatterns_pfeil" src="images/pfeil_nach_unten.svg" alt="pfeilunten">
                     </div>
 
                     <div id="gamefulpatterns">
-
                         <div class="patterntext">
                             Diese Muster haben die Qualitäten von Spielen und konzentrieren sich auf schnelle Feedbacks.
                         </div>
@@ -103,11 +98,12 @@
                                 Motovation: Macht
                             </div>
                         </div>
-
                     </div>
 
-
-
+                    <div class="h3_box" id="socialpatterns_link" onclick="openPattern( this );">
+                        <h3 >Social Patterns</h3>
+                        <img class="pfeil socialpatterns_pfeil" src="images/pfeil_nach_unten.svg" alt="pfeilunten">
+                    </div>
                     <div id="socialpatterns">
 
                         <div class="patterntext">
@@ -204,6 +200,10 @@
                         </div>
                     </div>
 
+                    <div class="h3_box" id="interfacepatterns_link" onclick="openPattern( this );">
+                        <h3>Interface Patterns</h3>
+                        <img class="pfeil interfacepatterns_pfeil" src="images/pfeil_nach_unten.svg" alt="pfeilunten">
+                    </div>
                     <div id="interfacepatterns">
                         <div class="patterntext">
                             Sind Muster, die beschreiben wie Anwendungen über das Interface mit dem User kommunizieren.
@@ -274,6 +274,11 @@
                                 Motivation: Neugier, Unabhängigkeit, Gelassenheit
                             </div>
                         </div>
+                    </div>
+
+                    <div class="h3_box" id="informationpatterns_link" onclick="openPattern( this );">
+                        <h3>Information Patterns</h3>
+                        <img class="pfeil informationpatterns_pfeil" src="images/pfeil_nach_unten.svg" alt="pfeilunten">
                     </div>
 
                     <div id="informationpatterns">
@@ -368,26 +373,26 @@
                         </div>
                     </div>
                 </div>
-           
+            </div>
+
+
             <div class="pattern_info_box darkpattern_info_box">
-                <div class="nav">
-                    <ul>
-                        <li id="temporalpatterns_link" class="link" onclick="openTemporalpattern();">Temporal Dark Pattern</li>
-                        <li id="monetarypatterns_link" class="link" onclick="openMonetarypattern();">Monetary Dark Pattern</li>
-                        <li id="socialcapital_link" class="link" onclick="openSocialcapital();">Social Capital Dark Patterns</li>
-                    </ul>
+
+                <div class="h3_box" id="temporalpatterns_link" onclick="openPattern( this );">
+                    <h3>Temporal Dark Pattern</h3>
+                    <img class="pfeil temporalpatterns_pfeil" src="images/pfeil_nach_unten.svg" alt="pfeilunten">
                 </div>
                 <div id="temporalpatterns">
                     <div class="patterntext">
-                            Temporal Dark Pattern verlangen vom Nutzer viel Zeit zu investieren, bieten aber vergleichsweise zu wenig Spaß oder Belohnung, sodass beim Nutzer das Gefühl entsteht, seine Zeit verschwendet zu haben. Der Nutzer kann vorher nicht richtig einschätzen wie viel Zeit er benötigt um eine Aktion durchzuführen.
+                        Temporal Dark Pattern verlangen vom Nutzer viel Zeit zu investieren, bieten aber vergleichsweise zu wenig Spaß oder Belohnung, sodass beim Nutzer das Gefühl entsteht, seine Zeit verschwendet zu haben. Der Nutzer kann vorher nicht richtig einschätzen wie viel Zeit er benötigt um eine Aktion durchzuführen.
                     </div>
 
                     <button class="accordion">Grind</button>
                     <div class="panel">
                         <div class="panel_items">
-                        Bei diesem Pattern wird eine Aufgabe gestellt, die kein besonderes Können des Users erfordert, aber oft wiederholt werden muss um weiter zu kommen.
-                        Diese Pattern wird oft in Spielen verwendet.   
-                        </br>
+                            Bei diesem Pattern wird eine Aufgabe gestellt, die kein besonderes Können des Users erfordert, aber oft wiederholt werden muss um weiter zu kommen.
+                            Diese Pattern wird oft in Spielen verwendet.
+                            </br>
                             Motivation: Ordnung, Macht, Aufbewahrung, Status
                         </div>
                     </div>
@@ -395,10 +400,10 @@
                     <button class="accordion">Hellbroadcast</button>
                     <div class="panel">
                         <div class="panel_items">
-                            Hier kann der User ganz normal seinen Content den 
-                            anderen Usern zugänglich machen, jedoch wird dieser Content 
+                            Hier kann der User ganz normal seinen Content den
+                            anderen Usern zugänglich machen, jedoch wird dieser Content
                             nicht bei den anderen Usern angezeigt. Dieses Pattern wird auch von
-                            Facebook verwendet, den dort erreichen die Post meist nur 15% der Fans. 
+                            Facebook verwendet, den dort erreichen die Post meist nur 15% der Fans.
                             </br>
                             Motivation: Macht, Aufbewahrung, Status
                         </div>
@@ -407,97 +412,109 @@
                     <button class="accordion">Interaction by Demand</button>
                     <div class="panel">
                         <div class="panel_items">
-                                Der User wird dazu gezwungen die App nach zu einer bestimmten Zeit zu benutzen.
-                                Abwesende User werden mit Push- Benachrichtigungen zurück geholt, aktive User werden weggeschickt, indem Content nicht angezeigt wird, bis eine bestimmte Zeit vorrüber ist.
-                                
+                            Der User wird dazu gezwungen die App nach zu einer bestimmten Zeit zu benutzen.
+                            Abwesende User werden mit Push- Benachrichtigungen zurück geholt, aktive User werden weggeschickt, indem Content nicht angezeigt wird, bis eine bestimmte Zeit vorrüber ist.
+
                             </br>
                             Motivation: Neugier, Ordnung, Macht, Aufbewahrung
                         </div>
                     </div>
 
                 </div>
-                <div id="monetarypattern">
-                        <div class="patterntext">
-                                Diese Pattern führen dazu, dass die Nutzer den Überblick über das Geld verlieren oder es bereuen Geld bezahlt zu haben. Dabei sind die Unternehmen nur auf schnelles Geld aus, weshalb ein Vertrauensverlust entsteht und die User nie wieder zur Anwendung zurückkehren.
 
-                        </div>
-    
-                        <button class="accordion">Currency Confusion</button>
-                        <div class="panel">
-                            <div class="panel_items">
-                                    Das Geld wird in eine andere Währung (fiktive) umgewandelt und so hat der User keine Übersicht wie viel er in Wirklichkeit ausgibt.
-                                    Dies wird auch im positiven Sinne gemacht, um Verwirrung bei echten Währungen zu reduzieren oder um beispielsweise Indische Währung und US Dollar zu vergleichen.
-                                    Wenn die fiktive Währung höher skaliert ist, wirkt es als ob man durch das Umtauschen einen Gewinn machen würde.
+                <div class="h3_box" id="monetarypatterns_link" onclick="openPattern( this );">
+                    <h3>Monetary Dark Pattern</h3>
+                    <img class="pfeil monetarypatterns_pfeil" src="images/pfeil_nach_unten.svg" alt="pfeilunten">
+                </div>
+                <div id="monetarypatterns">
+                    <div class="patterntext">
+                        Diese Pattern führen dazu, dass die Nutzer den Überblick über das Geld verlieren oder es bereuen Geld bezahlt zu haben. Dabei sind die Unternehmen nur auf schnelles Geld aus, weshalb ein Vertrauensverlust entsteht und die User nie wieder zur Anwendung zurückkehren.
+
+                    </div>
+
+                    <button class="accordion">Currency Confusion</button>
+                    <div class="panel">
+                        <div class="panel_items">
+                            Das Geld wird in eine andere Währung (fiktive) umgewandelt und so hat der User keine Übersicht wie viel er in Wirklichkeit ausgibt.
+                            Dies wird auch im positiven Sinne gemacht, um Verwirrung bei echten Währungen zu reduzieren oder um beispielsweise Indische Währung und US Dollar zu vergleichen.
+                            Wenn die fiktive Währung höher skaliert ist, wirkt es als ob man durch das Umtauschen einen Gewinn machen würde.
                             </br>
-                                Motivation: Ordnung, Macht, Aufbewahrung, Status
-                            </div>
-                        </div>
-    
-                        <button class="accordion">Pay to Skip</button>
-                        <div class="panel">
-                            <div class="panel_items">
-                                    User können Probleme umgehen, indem sie Geld zahlen. Die Probleme werden meist
-                                    künstlich von den Entwicklern erzeugt.
-                                    Usern wird angeboten schwere Level zu überspringen, wenn sie ein beispielsweise ein
-                                    Power Up kaufen.
-                                </br>
-                                Motivation: Macht, Aufbewahrung, Status
-                            </div>
-                        </div>
-    
-                        <button class="accordion">Monetized Rivalries</button>
-                        <div class="panel">
-                            <div class="panel_items">
-                                    Auch bekannt als Pay to Win.
-                                    Der Konkurrenzkampf zwischen den Usern, beispielsweise bei Spielen, wird ausgenutzt.
-                                    Den Usern wird angeboten mit Geld Power Ups zu kaufen um besser zu sein und den
-                                    Highscore zu erreichen.
-                                </br>
-                                Motivation: Neugier, Ordnung, Macht, Aufbewahrung
-                            </div>
-                        </div>
-    
-                    </div>
-                    <div id="socialcapital">
-                            <div class="patterntext">
-                                    Bei dieser Methode werden die sozialen Kontakte des Users ausgenutzt und die Freundschaften zu diesen gefährdet. 
-                            </div>
-        
-                            <button class="accordion">Impersonation</button>
-                            <div class="panel">
-                                <div class="panel_items">
-                                Beiträge eines Users werden generiert und veröffentlicht, obwohl dieser gar nichts mit dem Inhalt zu tun hat. 
-
-                                </br>
-                                    Motivation: Ordnung, Macht, Aufbewahrung, Status
-                                </div>
-                            </div>
-        
-                            <button class="accordion">Social Pyramid Schemes</button>
-                            <div class="panel">
-                                <div class="panel_items">
-                                        User sollen neue User werben um so Vorteile durch diese zu bekommen
-                                        Inhalte werden blockiert, bis eine bestimmte Anzahl an Personen geworben wurden
-
-                                    </br>
-                                    Motivation: Macht, Aufbewahrung, Status
-                                </div>
-                            </div>
-        
-                            <button class="accordion">Monetized Rivalries</button>
-                            <div class="panel">
-                                <div class="panel_items">
-                                        Auch bekannt als Pay to Win.
-                                        Der Konkurrenzkampf zwischen den Usern, beispielsweise bei Spielen, wird ausgenutzt.
-                                        Den Usern wird angeboten mit Geld Power Ups zu kaufen um besser zu sein und den
-                                        Highscore zu erreichen.
-                                    </br>
-                                    Motivation: Neugier, Ordnung, Macht, Aufbewahrung
-                                </div>
-                            </div>
-        
+                            Motivation: Ordnung, Macht, Aufbewahrung, Status
                         </div>
                     </div>
+
+                    <button class="accordion">Pay to Skip</button>
+                    <div class="panel">
+                        <div class="panel_items">
+                            User können Probleme umgehen, indem sie Geld zahlen. Die Probleme werden meist
+                            künstlich von den Entwicklern erzeugt.
+                            Usern wird angeboten schwere Level zu überspringen, wenn sie ein beispielsweise ein
+                            Power Up kaufen.
+                            </br>
+                            Motivation: Macht, Aufbewahrung, Status
+                        </div>
+                    </div>
+
+                    <button class="accordion">Monetized Rivalries</button>
+                    <div class="panel">
+                        <div class="panel_items">
+                            Auch bekannt als Pay to Win.
+                            Der Konkurrenzkampf zwischen den Usern, beispielsweise bei Spielen, wird ausgenutzt.
+                            Den Usern wird angeboten mit Geld Power Ups zu kaufen um besser zu sein und den
+                            Highscore zu erreichen.
+                            </br>
+                            Motivation: Neugier, Ordnung, Macht, Aufbewahrung
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="h3_box" id="socialcapital_link" onclick="openPattern( this );">
+                    <h3>Social Capital Dark Patterns</h3>
+                    <img class="pfeil socialcapital_pfeil" src="images/pfeil_nach_unten.svg" alt="pfeilunten">
+                </div>
+                <div id="socialcapital">
+                    <div class="patterntext">
+                        Bei dieser Methode werden die sozialen Kontakte des Users ausgenutzt und die Freundschaften zu diesen gefährdet.
+                    </div>
+
+                    <button class="accordion">Impersonation</button>
+                    <div class="panel">
+                        <div class="panel_items">
+                            Beiträge eines Users werden generiert und veröffentlicht, obwohl dieser gar nichts mit dem Inhalt zu tun hat.
+
+                            </br>
+                            Motivation: Ordnung, Macht, Aufbewahrung, Status
+                        </div>
+                    </div>
+
+                    <button class="accordion">Social Pyramid Schemes</button>
+                    <div class="panel">
+                        <div class="panel_items">
+                            User sollen neue User werben um so Vorteile durch diese zu bekommen
+                            Inhalte werden blockiert, bis eine bestimmte Anzahl an Personen geworben wurden
+
+                            </br>
+                            Motivation: Macht, Aufbewahrung, Status
+                        </div>
+                    </div>
+
+                    <button class="accordion">Monetized Rivalries</button>
+                    <div class="panel">
+                        <div class="panel_items">
+                            Auch bekannt als Pay to Win.
+                            Der Konkurrenzkampf zwischen den Usern, beispielsweise bei Spielen, wird ausgenutzt.
+                            Den Usern wird angeboten mit Geld Power Ups zu kaufen um besser zu sein und den
+                            Highscore zu erreichen.
+                            </br>
+                            Motivation: Neugier, Ordnung, Macht, Aufbewahrung
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
                 </div>
             </div>
 
@@ -555,8 +572,7 @@
 
 <script>
 	jQuery( document ).ready(function() {
-		openGamefulPatterns();
-		openTemporalpattern();
+		hidePatterns();
 	});
 
 
