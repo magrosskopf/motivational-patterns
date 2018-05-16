@@ -225,3 +225,17 @@ a {
     padding: 20px;
     text-align: left;
 }
+
+@media screen and ( max-width: 400px ) {
+    h1 {
+        font-size: 100pt;
+    }
+
+    #button_reiss {
+        font-size: 20px;
+    }
+
+    #button_pattern {
+        font-size: 20px;
+    }
+}
