@@ -327,4 +327,13 @@ footer {
         padding: auto;
         cursor: pointer;
     }
+
+    .motivation_img {
+        height: auto;
+        width: 100%;
+    }
+
+    .motivation_img_box {
+        padding: 20px;
+    }
 }
